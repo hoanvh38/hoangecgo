@@ -1,4 +1,5 @@
 import 'package:conigecgo/routes/app_pages.dart';
+import 'package:conigecgo/style/app_style.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/smart_management.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -17,6 +18,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       enableLog: true,
       initialRoute: AppRoutes.HOME,
+      theme: Style.lightTheme,
+      darkTheme: Style.darkTheme,
+      themeMode: ThemeMode.light,
       defaultTransition: Transition.fade,
       getPages: AppPages.routes,
       smartManagement: SmartManagement.keepFactory,

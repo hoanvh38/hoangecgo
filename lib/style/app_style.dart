@@ -6,7 +6,7 @@ class Style {
   Style();
 
   static ThemeData lightTheme = ThemeData.light().copyWith(
-    primaryColorLight: const Color(0xff44C662),
+    primaryColorLight: const Color(0xff96C162),
     primaryColorDark: const Color(0xffF23A3A),
     primaryColor: const Color(0xff5AFFE7),
     colorScheme: const ColorScheme.highContrastLight().copyWith(
@@ -191,10 +191,15 @@ class Style {
   static Color shadowPremium = const Color.fromRGBO(255, 107, 0, 0.4);
 
   //Text style
-  static const String fontMedium = "ChakraPetch-Medium";
-  static const String fontDemiBold = "ChakraPetch-SemiBold";
-  static const String fontRegular = "ChakraPetch-Regular";
-  static const String fontBold = "ChakraPetch-Bold";
+  static const String fontMedium = "Inter-Medium";
+  static const String fontDemiBold = "Inter-SemiBold";
+  static const String fontRegular = "Inter-Regular";
+  static const String fontBold = "Inter-Bold";
+  static const String fontBlack = "Inter-Black";
+  static const String fontThin = "Inter-Thin";
+  static const String fontExtraBold = "Inter-ExtraBold";
+  static const String fontExtraLight = "Inter-ExtraLight";
+  static const String fontLight = "Inter-Light";
 
   TextStyle textStyle({
     double? height,
@@ -211,8 +216,8 @@ class Style {
 
   TextStyle headline5Neutrals1 = TextStyle(
     color: Get.context?.textTheme.headlineMedium!.color,
-    fontFamily: fontBold,
-    fontSize: 20.sp,
+    fontFamily: fontRegular,
+    fontSize: 12.sp,
     letterSpacing: -0.01,
   );
 
